@@ -1,0 +1,36 @@
+
+.back {
+
+    color: black;
+    background-color: rgb(84, 161, 224);
+    text-align: center;
+}
+img {
+    padding: 1em;
+}
+.player-ranking{
+    color: black;
+    border: 2px solid rgb(31, 27, 27);
+    padding: .5em;
+}
+h4{
+    color: white;
+    background-color: black;
+    border: 3px dotted white;
+
+}
+
+body{
+    text-align: center;
+    font-family: Verdana;
+}
+
+
+.ranking-info{
+   
+    color: white;
+    background-color: black;
+}
+.points{
+    border: 1px 0 0  0   solid black;
+}

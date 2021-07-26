@@ -1,5 +1,5 @@
 const data = [
-    {id: 1, firstName: 'Tony', lastName: 'Spredeman', country: 'USA', ranking: 5, birthYear: 1984, ocPoints: 628, mdPoints: 280, osPoints: 288, odPoints: 340},
+    {id: 1, firstName: 'Tony', lastName: 'Spredeman', country: 'USA', ranking: 5, birthYear: 1984, ocPoints: 628, mdPoints: 280, osPoints: 288, odPoints: 340, photo: 'https://media.fast4foos.org/photos/players/84000895.jpg'},
     {id: 2, firstName: 'Thomas', lastName: 'Haas', country: 'Germany', ranking: 1, birthYear: 1996, ocPoints: 1061, mdPoints: 192, osPoints: 550, odPoints: 511},
     {id: 3, firstName: 'Matthias', lastName: 'Schoepf', country: 'Austria', ranking: 3, birthYear: 1992, ocPoints: 654, mdPoints: 350, osPoints: 374, odPoints: 280},
     {id: 4, firstName: 'Martin', lastName: 'Dousa', country: 'Czech Republic', ranking: 6, birthYear: 1988, ocPoints: 481, mdPoints: 168, osPoints: 281, odPoints: 200},

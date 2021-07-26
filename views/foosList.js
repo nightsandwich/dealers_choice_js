@@ -2,11 +2,11 @@ module.exports = (players) => `<!DOCTYPE html>
   <html>
   <head>
     <title>Foosball Stars</title>
-    
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="players-list">
-      <header>Foosball Stars</header>
+    <header><img src="/itsf.jpeg"/><br>Foosball Stars</header>
       ${players.map(player => `
         <div class='player-item'>
           <p>

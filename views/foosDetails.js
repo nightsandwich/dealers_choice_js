@@ -9,24 +9,30 @@ module.exports = (player) => `<!DOCTYPE html>
     <header><img src="/itsf.jpeg"/></header>
       <div class='player-item'>
       <p>
-        <span class="news-position">${player.ranking}</span> 
-        <h4>${player.firstName} ${player.lastName}</h4>
+        <span class="player-ranking">#${player.ranking}</span>
+        <br>
+        <img src=${player.photo}>
+        <h4>${player.firstName} ${player.lastName} <span><small>(${player.country})</small></span></h4>
       </p>
-      <p class="news-info">${player.country}</p>
-      <small class="ranking-info">
+      <div class="ranking-info">
         Open Singles Ranking: ${player.ranking}
-        <br> 
-        Open Singles Points: ${player.osPoints}
         <br>
-        Open Combined Points: ${player.ocPoints}
         <br>
-        Mixed Doubles Points: ${player.mdPoints}
-        <br>
-        Open Doubles Points: ${player.odPoints}
-      </small>
+        <div class="points"> 
+          Open Singles Points: ${player.osPoints}
+          <br>
+          Open Combined Points: ${player.ocPoints}
+          <br>
+          Mixed Doubles Points: ${player.mdPoints}
+          <br>
+          Open Doubles Points: ${player.odPoints}
+        </div>
+      </div>
       
     </div>
   </div>
-  <a href="/">Back to Foosball Stars</a>
+  <br>
+  <br>
+  <a href="/" class='back'>Back to Foosball Stars</a>
 </body>
 </html>`;
