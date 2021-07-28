@@ -1,21 +1,21 @@
 module.exports = (player) => `<!DOCTYPE html>
 <html>
 <head>
-  <title>Foosball Stars</title>
+  <title>${player.firstName} ${player.lastName}</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="players-list">
-    <header><img src="/itsf.jpeg"/></header>
-      <div class='player-item'>
+    <header><img class="itsf" src="/itsf.jpeg"/></header>
+      <div class="details">
       <p>
-        <span class="player-ranking">#${player.ranking}</span>
+        <span class="details ranking">Ranked #${player.id}</span>
         <br>
         <img src=${player.photo}>
         <h4>${player.firstName} ${player.lastName} <span><small>(${player.country})</small></span></h4>
       </p>
-      <div class="ranking-info">
-        Open Singles Ranking: ${player.ranking}
+      <div>
+        Open Singles Ranking: ${player.id}
         <br>
         <br>
         <div class="points"> 

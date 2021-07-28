@@ -6,18 +6,28 @@ module.exports = (players) => `<!DOCTYPE html>
   </head>
   <body>
     <div class="players-list">
-    <header><img src="/itsf.jpeg"/><br>Foosball Stars</header>
+    <header><img class="itsf" src="/itsf.jpeg"/><br>International Table Soccer Federation Foosball Stars</header>
       ${players.map(player => `
-        <div class='player-item'>
-          <p>
-            <a href="/players/${player.ranking}">${player.ranking}</a>
-          </p>
-            <h4>${player.firstName} ${player.lastName}</h4>
-          <h5 class="player-country">
-            Age: ${2021 - player.birthYear}
-            <br>  
-            Country: ${player.country}  
-          </h5>
+        <div class='player'>
+          <div class='ranking'>
+            <div>
+              Ranking:
+              <a href="/players/${player.id}"> ${player.id}</a>
+              <br>
+              <a href="/players/${player.id}"><img src=${player.photo}></a>
+            </div>
+            <div>  
+              <h4 class='name'>${player.firstName} ${player.lastName}</h4>
+            </div>
+            <div>
+              <h5 class="age-country">
+                Age: ${2021 - player.birthYear}
+                <br>  
+                Country: ${player.country}  
+              </h5>
+              <br>
+            </div>
+          </div>
         </div>`
       ).join("")}
     </div>
